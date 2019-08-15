@@ -1,7 +1,5 @@
-%% Supplementary Code for Submission Neurips 2019
 % The Geometric Sparse Matrix Completion Model for Predicting Drug Side
 % effects.
-% This code will be provided with the publication.
 
 % Initialization
 clear all; close all; clc;
