@@ -44,3 +44,8 @@ It uses the graph regularization on the human PPI network.
     Xhat = p*Xc + (1-p)*Xr'; 
 ``` 
 
+## References
+
+If you find these resources useful, please cite our work: 
+
+Galeano, Diego Ariel Galeano, and Alberto Paccanaro. "The Geometric Sparse Matrix Completion Model for Predicting Drug Side effects." bioRxiv (2019): 652412.
