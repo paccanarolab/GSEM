@@ -1,5 +1,7 @@
-% The Geometric Sparse Matrix Completion Model for Predicting Drug Side
-% effects.
+%% Interpretable drug side effect prediction
+% Geometric self-expressive model (GSEM)
+% author: Diego Galeano, 21/05/2019
+% Copyright: MIT 
 
 % Initialization
 clear all; close all; clc;
@@ -26,8 +28,8 @@ parfor i = 1:nfolds % use normal 'for' if do not want to parallelize
     Xtest = full(double(R_test{i}));
     
     tStart = tic;
-    % Learn C by using the GSMC-c model 
-    [ Xc, ~ ] = GSMCc( Xtrain,...     % binary input matrix
+    % Learn C by using the GSEMc model 
+    [ Xc, ~ ] = GSEMc( Xtrain,...     % binary input matrix
                                {},...     % side graphs for side effects
                                [],...     % alpha_c for side graphs
                                1,...      % beta_c
@@ -36,10 +38,8 @@ parfor i = 1:nfolds % use normal 'for' if do not want to parallelize
                                10^4,...   % gamma_c
                                1e-2,100); % tolX, maxiter (stopping criteria)
                                  
-    % Learn R by using the GSMC-r model
-    %    Note that GSMC-c can be used to solve GSMC-r as X ~ RX = (X^T R^T)^T
-    %    by learning R^T using X^T as input matrix.
-    [ Xr, ~ ] = GSMCc( Xtrain',...    % binary input matrix
+    % Learn R by using the GSEMr model 
+    [ Xr, ~ ] = GSEMc( Xtrain',...    % binary input matrix
                                G,...      % side graphs for drugs
                                [0.5,1,1,0.01],...     % alpha for drugs
                                2,...      % beta_r
