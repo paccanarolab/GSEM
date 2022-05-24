@@ -1,0 +1,67 @@
+function [ S ] = GSEM( X, G, alpha, beta, lambda)
+    %% Geometric self-expressive models (GSEM)
+    %  This method implements GSEM for an input matrix X and graph
+    %  information that constraints the columns in X
+    %  Input:
+    %    X: nxm matrix containing drug side effect associations
+    %    G: cell array in which each element is a graph of mxm
+    %    alpha: vector that weighs the importance of each graph for the
+    %    learning
+    %    beta: L2-regularization parameter
+    %    lambda: L1-regularization parameter
+    %    variance: variance factor for the initialization of the matrix to
+    %    be learned
+    %    gamma: 
+    %%
+    [~, m] = size(X);
+
+    % initialization 
+    gamma = 10000;
+    variance = 0.01;
+    tolX = 1e-2;
+    maxiter = 500;
+     S = rand(m, m)*sqrt(variance);     
+     I = eye(m); % identity matrix
+     
+     % numerator
+     ngraphs = length(G);
+     D = cell(length(G), 1);
+     for i = 1:ngraphs
+        D{i} = diag(sum(G{i},2)); 
+     end
+    
+     C = X'*X;
+     sqrteps = sqrt(eps);
+     S0 = S; 
+  
+     
+     for iter = 1:maxiter
+            numerGraph = zeros(size(S));
+            denGraph = zeros(size(S));
+          
+
+            for graph = 1:ngraphs                
+                numerGraph = numerGraph + alpha(graph)*S*G{graph};
+                denGraph = denGraph + alpha(graph)*S*D{graph};
+               
+            end
+             
+            
+            numer = C + numerGraph;
+            denominator = C*S + denGraph + beta*S  + lambda + gamma*I +  eps(numer);
+
+            S = max(0, S.* (numer./denominator)); 
+            
+            % get the max change in W 
+            dw = max(max(abs(S-S0) / (sqrteps+max(max(abs(S0))))));
+            S0 = S;
+
+            
+            if dw <= tolX                     
+                fprintf('\n iter: %d, dw = %e \n',iter, full(dw));            
+                break;
+            end
+
+     end             
+
+end
