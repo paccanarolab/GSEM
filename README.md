@@ -1,6 +1,6 @@
 # Machine Learning Prediction of Side effects for Drugs in Clinical Trials
 
-The code in the Matlab LiveScript contains a step-to-step example on how to run our algorithm, Geometric Self-Expressive Models (GSEM) on the side effect data used in the paper. Please start by opening the **driver.mlx** file, which is a  ([Matlab LiveScript]([http://effectif.com/nesta](https://la.mathworks.com/help/matlab/matlab_prog/what-is-a-live-script-or-function.html?lang=en))).
+The code in the Matlab LiveScript contains a step-to-step example on how to run our algorithm, Geometric Self-Expressive Models (GSEM) on the side effect data used in the paper. Please start by opening the **driver.mlx** file, which is a [Matlab LiveScript][http://effectif.com/nesta](https://la.mathworks.com/help/matlab/matlab_prog/what-is-a-live-script-or-function.html?lang=en).
 
 ### Datasets
 
