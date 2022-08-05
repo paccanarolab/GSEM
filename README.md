@@ -51,7 +51,7 @@ If you find these resources useful, please cite our work:
 
 Galeano, Diego, and Alberto Paccanaro. "The Geometric Sparse Matrix Completion Model for Predicting Drug Side effects." bioRxiv (2019): 652412.
 
-## Websites
+## Research page
 https://paccanarolab.org/
 
 https://diegogalpy.github.io/
