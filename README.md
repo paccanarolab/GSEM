@@ -28,7 +28,8 @@ For easiness, we also provide a .mat file with all the datasets we used in our s
     2. Indication similarity.
     3. Target similarity.
     4. ATC taxonomy similarity.
-  * *GSE*. contains in each element a side effect-side effect similarity matrix. {1} MedDRA taxonomy similarity. 
+  * *GSE*. contains in each element a side effect-side effect similarity matrix. 
+    1. MedDRA taxonomy similarity. 
 
 ### Code
 
