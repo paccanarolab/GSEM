@@ -1,6 +1,6 @@
 # Machine Learning Prediction of Side effects for Drugs in Clinical Trials
 
-The code in the Matlab notebook contains an step-to-step example on how to run our algorithm, Geometric Self-Expressive Models (GSEM). Please start by opening the **driver.mlx** file, which is a Matlab notebook.
+The code in the Matlab LiveScript contains a step-to-step example on how to run our algorithm, Geometric Self-Expressive Models (GSEM) on the side effect data used in the paper. Please start by opening the **driver.mlx** file, which is a Matlab LiveScript.
 
 ### Datasets
 
@@ -33,7 +33,7 @@ For easiness, we also provide a .mat file with all the datasets we used in our s
 
 ### Code
 
-The code in the **driver.mlx** illustrates an example of how to run our algorithm using all the available side effect data. This code could be readily used for making predictions for the drugs in our dataset (or by including a new drug/compound information). In the code, we also dive a bit into the interpretability of the model, with an example for Metformin! 
+The code in the **driver.mlx** illustrates an example of how to run our algorithm using all the available side effect data. This code could be readily used for making predictions for the drugs in our dataset (or by including a new drug/compound information). In the code, we also dive a bit into the interpretability of the model, with an example for Metformin!. 
 
 #### Dependencies
 
