@@ -1,4 +1,5 @@
 # Machine Learning Prediction of Side effects for Drugs in Clinical Trials
+Diego Galeano and Alberto Paccanaro.
 
 The code in the Matlab LiveScript contains a step-to-step example on how to run our algorithm, Geometric Self-Expressive Models (GSEM) on the side effect data used in the paper. Please start by opening the **driver.mlx** file, which is a [Matlab LiveScript](https://la.mathworks.com/help/matlab/matlab_prog/what-is-a-live-script-or-function.html?lang=en).
 
@@ -42,10 +43,14 @@ The only dependency in our code is the file **GSEM.m**, which contains the raw i
 
 ### Bugs and suggestions
 
-If you find any bug in our code, please let us know: dgaleano@ing.una.py
+If you find any bug in our code, please let us know: dgaleano@ing.una.py.
 
 ## References
 
 If you find these resources useful, please cite our work: 
 
 Galeano, Diego, and Alberto Paccanaro. "The Geometric Sparse Matrix Completion Model for Predicting Drug Side effects." bioRxiv (2019): 652412.
+
+## Websites
+https://paccanarolab.org/
+https://diegogalpy.github.io/
