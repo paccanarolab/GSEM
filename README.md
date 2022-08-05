@@ -32,9 +32,12 @@ For easiness, we also provide a .mat file with all the datasets we used in our s
 
 ### Code
 
-The code in the **driver.mlx** illustrates an example of how to run our algorithm using all the available side effect data. This code could be readily used for making predictions for the drugs in our dataset (or by including a new drug/compound information).
+The code in the **driver.mlx** illustrates an example of how to run our algorithm using all the available side effect data. This code could be readily used for making predictions for the drugs in our dataset (or by including a new drug/compound information). In the code, we also dive a bit into the interpretability of the model, with an example for Metformin! 
 
-In the code, we also dive a bit into the interpretability of the model, with an example for Metformin! 
+#### Dependencies
+
+The only dependency in our code is the file **GSEM.m**, which contains the raw implementation of our multiplicative learning algorithm. This is provided inside the folder source.
+
 
 ### Bugs and suggestions
 
