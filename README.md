@@ -1,4 +1,4 @@
-# Machine Learning Prediction of Drug Side effects in Clinical Trials
+# Machine Learning Prediction of Side effects for Drugs in Clinical Trials
 
 The code in the Matlab notebook contains an step-to-step example on how to run our algorithm, Geometric Self-Expressive Models (GSEM). Please start by opening the **driver.mlx** file, which is a Matlab notebook.
 
