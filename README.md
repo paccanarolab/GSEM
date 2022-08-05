@@ -30,6 +30,16 @@ For easiness, we also provide a .mat file with all the datasets we used in our s
     4. ATC taxonomy similarity.
   * *GSE*. contains in each element a side effect-side effect similarity matrix. {1} MedDRA taxonomy similarity. 
 
+### Code
+
+The code in the **driver.mlx** illustrates an example of how to run our algorithm using all the available side effect data. This code could be readily used for making predictions for the drugs in our dataset (or by including a new drug/compound information).
+
+In the code, we also dive a bit into the interpretability of the model, with an example for Metformin! 
+
+### Bugs and suggestions
+
+If you find any bug in our code, please let us know: dgaleano@ing.una.py
+
 ## References
 
 If you find these resources useful, please cite our work: 
